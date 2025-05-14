@@ -17,11 +17,12 @@ body {
 
 .header {
   background-image: linear-gradient(#00b4d8a2, #03055eb4),
-    url(./images/hero.jpg);
+    url(./images/hero1.jpg);
 
   height: 95vh;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  border-radius: 10px;
 }
 
 .heroLogo {
