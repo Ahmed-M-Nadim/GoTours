@@ -48,18 +48,80 @@ body {
   font-weight: 400;
   letter-spacing: 3rem;
   color: white;
+  animation-name: fromTheLeft;
+  animation-duration: 2s;
 }
 
 .heroTitle span {
   font-size: 3rem;
   letter-spacing: 0.9rem;
   color: white;
+  animation-name: fromTheRight;
+  animation-duration: 2s;
 }
 
 .heroTitle button {
-  padding: 1rem 2rem;
+  padding: 1.5rem 2.5rem;
   font-size: 1.5rem;
   margin-top: 6rem;
   color: #03045e;
-  border-radius: 2rem;
+  border-radius: 2.5rem;
+  animation-name: fromTheBottom;
+  animation-duration: 2s;
+  transition: all 0.3s;
+}
+
+.heroTitle button:hover {
+  color: #ffffff;
+  background-color: #4eb3d4;
+}
+
+@keyframes fromTheLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  80% {
+    opacity: 9;
+    transform: translateX(1%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromTheRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  80% {
+    opacity: 9;
+    transform: translateX(-1%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fromTheBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  80% {
+    opacity: 9;
+    transform: translateY(-1%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
