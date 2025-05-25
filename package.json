@@ -4,7 +4,7 @@
   "description": "Landing page",
   "main": "script.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss style.css"
+    "compile:sass": "node-sass sass/main.scss style.css -w"
   },
   "author": "Ahmed Nadim",
   "license": "ISC",
