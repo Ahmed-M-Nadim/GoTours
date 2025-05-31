@@ -1,30 +1,25 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   font-family: Lato, sans-serif;
-  padding: 30px;
-}
+  padding: 30px; }
 
 .header {
-  background-image: linear-gradient(#00b4d8a2, #03055eb4),
-    url(./images/hero1.jpg);
+  background-image: linear-gradient(#00b4d8a2, #03055eb4), url(./images/hero1.jpg);
   height: 95vh;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   border-radius: 10px;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .heroLogo {
   position: absolute;
   top: 3rem;
   left: 3rem;
-  width: 10rem;
-}
+  width: 10rem; }
 
 .heroTitle {
   display: flex;
@@ -34,86 +29,68 @@ body {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
-.heroTitle h1 {
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3rem;
-  color: white;
-  animation-name: fromTheLeft;
-  animation-duration: 2s;
-}
-.heroTitle span {
-  font-size: 3rem;
-  letter-spacing: 0.9rem;
-  color: white;
-  animation-name: fromTheRight;
-  animation-duration: 2s;
-}
-.heroTitle button {
-  padding: 1.5rem 2.5rem;
-  font-size: 1.5rem;
-  margin-top: 6rem;
-  color: #03045e;
-  border-radius: 2.5rem;
-  animation-name: fromTheBottom;
-  animation-duration: 2s;
-  transition: all 0.3s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.329);
-  backface-visibility: hidden;
-}
-.heroTitle button:hover {
-  color: #ffffff;
-  background-color: #4eb3d4;
-}
-.heroTitle button:active {
-  transform: scale(0.99);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.486);
-  font-size: 1.48rem;
-}
+  transform: translate(-50%, -50%); }
+  .heroTitle h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3rem;
+    color: white;
+    animation-name: fromTheLeft;
+    animation-duration: 2s; }
+  .heroTitle span {
+    font-size: 3rem;
+    letter-spacing: 0.9rem;
+    color: white;
+    animation-name: fromTheRight;
+    animation-duration: 2s; }
+  .heroTitle button {
+    padding: 1.5rem 2.5rem;
+    font-size: 1.5rem;
+    margin-top: 6rem;
+    color: #03045e;
+    border-radius: 2.5rem;
+    animation-name: fromTheBottom;
+    animation-duration: 2s;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.329);
+    backface-visibility: hidden; }
+    .heroTitle button:hover {
+      color: #ffffff;
+      background-color: #4eb3d4; }
+    .heroTitle button:active {
+      transform: scale(0.99);
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.486);
+      font-size: 1.48rem; }
 
 @keyframes fromTheLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100%);
-  }
+    transform: translateX(-100%); }
   80% {
     opacity: 9;
-    transform: translateX(1%);
-  }
+    transform: translateX(1%); }
   100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
 
 @keyframes fromTheRight {
   0% {
     opacity: 0;
-    transform: translateX(100%);
-  }
+    transform: translateX(100%); }
   80% {
     opacity: 9;
-    transform: translateX(-1%);
-  }
+    transform: translateX(-1%); }
   100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
 
 @keyframes fromTheBottom {
   0% {
     opacity: 0;
-    transform: translateY(100%);
-  }
+    transform: translateY(100%); }
   80% {
     opacity: 9;
-    transform: translateY(-1%);
-  }
+    transform: translateY(-1%); }
   100% {
     opacity: 1;
-    transform: translateY(0);
-  }
-}
+    transform: translateY(0); } }

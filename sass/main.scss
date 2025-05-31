@@ -72,16 +72,16 @@ $darkBlue: #03045e;
     transition: all 0.3s;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.329);
     backface-visibility: hidden;
-  }
-  button:hover {
-    color: #ffffff;
-    background-color: #4eb3d4;
-  }
+    &:hover {
+      color: #ffffff;
+      background-color: #4eb3d4;
+    }
 
-  button:active {
-    transform: scale(0.99);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.486);
-    font-size: 1.48rem;
+    &:active {
+      transform: scale(0.99);
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.486);
+      font-size: 1.48rem;
+    }
   }
 }
 
