@@ -1,26 +1,19 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "base/utilities";
 
-body {
-  font-family: Lato, sans-serif;
-  padding: 30px;
-}
+@import "pages/home";
 
 // :root {
 //   --mainBlue: #0077b6;
 //   --lightBlue: #00b4d8;
 //   --darkBlue: #03045e;
 // }
-
-$mainBlue: #0077b6;
-$lightBlue: #00b4d8;
-$darkBlue: #03045e;
 
 .header {
   background-image: linear-gradient(#00b4d8a2, #03055eb4),
@@ -85,55 +78,5 @@ $darkBlue: #03045e;
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.486);
       font-size: 1.48rem;
     }
-  }
-}
-
-@keyframes fromTheLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  80% {
-    opacity: 9;
-    transform: translateX(1%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fromTheRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-
-  80% {
-    opacity: 9;
-    transform: translateX(-1%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes fromTheBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-
-  80% {
-    opacity: 9;
-    transform: translateY(-1%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
