@@ -9,11 +9,9 @@
 
 @import "pages/home";
 
-// :root {
-//   --mainBlue: #0077b6;
-//   --lightBlue: #00b4d8;
-//   --darkBlue: #03045e;
-// }
+@import "components/button";
+
+@import "layout/header";
 
 .header {
   background-image: linear-gradient(#00b4d8a2, #03055eb4),
